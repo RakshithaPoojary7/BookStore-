@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    
+   <div class="container">
+    <form action="payprocess.php" method="post">
+    <h1>Payment Information</h1>
+    <div class="first">
+        <div class="owner">
+            <h2>Card number</h2>
+            <div class="input-field">
+                <input type="text" id="cardNumber" name="cardNumber" maxlength="10" placeholder="Enter card number" oninput="checkInputs()">
+            </div>
+        </div>
+        <div class="cvv">
+            <h2>CVV</h2>
+            <div class="input-field">
+                <input type="password" id="cvv" maxlength="3" name="cvv" placeholder="3-digit code" oninput="checkInputs()">
+            </div>
+        </div>
+    </div>
+    <div class="second">
+        <div class="selection">
+            <h2>Expiry date</h2>
+            <div class="dates">
+                <input type="date" id="expiryDate" name="expiryDate" oninput="checkInputs()">
+            </div>
+        </div>
+        <div class="cards">
+            <img src="mcard.png">
+            <img src="vcard.png">
+            <img src="pcard.png">
+        </div>
+    </form>
+        <button id="saveButton" onclick="saveCard()" disabled>SAVE</button>
+    </div>
+    <div class="button">
+        <a href="confirm.html"  type="submit">NEXT</a>
+        <a href="buy.html" type="submit">BACK</a>
+   
+   </div>
+   <p><i class="fas fa-shield-alt"></i>&nbsp;<span>Your card information is safe and secure with us</span></p>
+   </div>
+   <script src="script.js"></script>
+    
+</body>
+</html>
