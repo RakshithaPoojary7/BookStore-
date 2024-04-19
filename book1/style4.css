@@ -1,0 +1,209 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+.menu-bar {
+    cursor: pointer;
+    position:fixed;
+    top: 10px;
+    left: 180px;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Styles for the navigation menu */
+.nav-menu {
+    position: fixed;
+    top: 96%;
+    left: 6%;
+    transform: translate(-50%,-170%);
+    background-color: lightslategrey;
+    color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    display:none;
+    width:100px;
+  
+}
+.nav-menu.show {
+    display: block;
+}
+.nav-menu a {
+    display: block;
+    padding: 12px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-menu a:hover {
+  background-color: #c4c4c4;
+}
+.icons {
+  display: flex;
+   transform: translate(-20%,-10%);
+   font-size: 20px;
+
+}
+
+.search-icon{
+    transform: translate(10%,10%);
+}
+.search-icon,
+.cart-icon {
+    margin-right: 10px; /* Adjust the spacing between icons as needed */
+}
+
+/* Your existing styles for the sidebar and book cards go here */
+
+
+
+#sidebar {
+    width: 230px;
+    height: 100%;
+    background-color: #333;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+    padding-top: 20px;
+    color: white;
+}
+
+#content {
+    margin-left: 250px;
+    padding: 20px;
+    
+}
+
+/* Style for sidebar links */
+#sidebar a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Style for sidebar links on hover */
+#sidebar a:hover {
+    background-color: #555;
+}
+
+.arrivals{
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 35px;
+}
+.arrivals h1{
+    font-size: 25px;
+    text-align:right;
+    margin-bottom: 35px;
+    transform: translate(-70%,29%);
+}
+.arrivals h2{
+    margin-bottom: -40px;
+    transform: translate(-1%,-199%);
+}
+ 
+.arrivals .arrive_box{
+    width: 45%;
+    height:60vh;
+    margin: 8px ;
+    padding: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 65px 0px;
+    transform: translate(36%,2%);
+}
+.arrivals .arrive_box .arrive_card{
+    width:180px;
+   
+    text-align: center;
+    padding: 2px;
+    border: 1px solid #919191;
+    margin: auto 20px;
+    height:380px;
+}
+.arrivals .arrive_box .arrive_card:hover{
+    box-shadow:0 0 5px #027b8b;
+}
+.arrivals .arrive_box .arrive_card .arrive_image{
+    width: 150px;
+    height: 220px;
+    margin: 0 auto;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    overflow:hidden;
+}
+
+.arrivals .arrive_box .arrive_card .arrive_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+
+.arrivals .arrive_box .arrive_card:hover .arrive_image img{
+    transform: scale(1.1);
+}
+.arrivals .arrive_box .arrive_card .arrive_tag p{
+    font-family: queen of camelot;
+    font-size: 18px;
+    margin: 8px 0;
+    transform: translate(2%,-20%);
+    font-weight: bold;
+}
+.arrivals .arrive_box .arrive_card .arrive_tag  .arrive_icon{
+    color:rgb(8, 94, 8);
+    margin-bottom: 18px;
+    transform: translate(2%,-40%);
+}
+.arrivals .arrive_box .arrive_card .arrive_tag .book_price {
+
+margin-top: -10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+.arrivals .arrive_box .arrive_card .arrive_tag .arrivals_btn {
+    padding: 8px;
+    border: 2px solid #089da1;
+    text-decoration: none;
+    color:#000;
+    position: relative;
+    top:  15px ;
+    background:#2c88af;
+}
+.arrivals .arrive_box .arrive_card .arrive_tag button{
+    padding: 10px;
+        border: 2px solid #089da1;
+        text-decoration: none;
+        color:#000;
+        position: relative;
+        top:  -35px ;
+        background:#2c88af;
+        transform: translate(2%,130%);
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .arrivals .arrive_box .arrive_card .arrive_tag button:hover{
+        box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    }
+.arrivals .arrive_box .arrive_card .arrive_tag .arrivals_btn:hover {
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+}
+
+
+
+.featured_books{
+    width:100%;
+    height:100vh;
+    padding:70px 0;
+   
+}
+

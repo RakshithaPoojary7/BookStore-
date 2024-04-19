@@ -1,0 +1,103 @@
+/******payment******/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width:100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: azure;
+}
+.container{
+    width:650px;
+    height:450px;
+    border:1px solid;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    justify-content: center;
+}
+.container h1{
+    text-align: center;
+    transform: translate(1%,-80%);
+}
+.first{
+    display: flex;
+}
+.owner{
+    width:100%;
+    margin-right: 40px;
+}
+.input-field{
+border:1px solid #999;
+}
+.input-field input{
+    width:100%;
+    border:none;
+    outline:none;
+    padding:10px;
+}
+.selection{
+    padding:20px;
+    justify-content: space-between;
+    align-items: center;
+    transform: translate(2%,10%);
+}
+.cards img{
+    width:100px;
+    transform: translate(290%,-95%);
+}
+button{
+    background-color:rgb(93, 179, 230);
+    border:none;
+    color:black;
+    padding:12px 32px;
+    text-decoration:none;
+    margin:4px 2px;
+    cursor:pointer;
+    font-weight: bolder;
+    transform: translate(220%,-120%);
+    }
+    
+    .style-submit:hover
+    {
+    background-color:rgb(151, 198, 252);
+    color:black;
+    }
+    .button a{ 
+        background-color:rgb(93, 179, 230);
+    border:none;
+    color:black;
+    padding:12px 22px;
+    text-decoration:none;
+    margin:4px 2px;
+    cursor:pointer;
+    font-weight: bolder;
+    cursor:pointer;
+    width:20%;
+    float:right;
+    transform: translate(-152%,-70%);
+    }
+    .button a:hover{
+        background-color:rgb(151, 198, 252);
+    }
+    p{
+        text-align: center;
+        margin-bottom: -70px;
+        color:blue;
+       
+    }
+    span{
+        color:black;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    
+   
