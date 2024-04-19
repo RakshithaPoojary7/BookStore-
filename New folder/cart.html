@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet"  href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart Page</title>
+  <script>
+    // Function to calculate the total sum of prices in the cart
+    function calculateTotal() {
+      var cart = JSON.parse(localStorage.getItem('cart')) || [];
+      var total = 0;
+
+      // Iterate through the cart and calculate the total
+      for (var i = 0; i < cart.length; i++) {
+        total += cart[i].price * cart[i].quantity;
+      }
+
+      // Display the total in the HTML element with id 'total'
+      document.getElementById('total').innerHTML = 'Total: $' + total.toFixed(2);
+    }
+
+    // Function to display the cart items in the table
+    function displayCart() {
+      var cart = JSON.parse(localStorage.getItem('cart')) || [];
+      var tableBody = document.getElementById('cart-table-body');
+
+      // Clear existing rows from the table
+      tableBody.innerHTML = '';
+
+      // Populate the table with cart data
+      for (var i = 0; i < cart.length; i++) {
+        var row = tableBody.insertRow(-1);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        var cell3 = row.insertCell(2);
+        var cell4 = row.insertCell(3);
+
+        cell1.innerHTML = cart[i].name;
+        cell2.innerHTML = '$' + cart[i].price.toFixed(2);
+        cell3.innerHTML = cart[i].quantity;
+
+        // Create a button to remove the item from the cart
+        var removeButton = document.createElement('button');
+        removeButton.innerText = 'Remove';
+        removeButton.onclick = function() {
+          // Get the row index
+          var rowIndex = this.parentNode.parentNode.rowIndex;
+
+          // Remove the item from the cart array
+          cart.splice(rowIndex - 1, 1);
+
+          // Save the updated cart data to local storage
+          localStorage.setItem('cart', JSON.stringify(cart));
+
+          // Refresh the display
+          displayCart();
+          calculateTotal();
+        };
+
+        cell4.appendChild(removeButton);
+      }
+
+      // Calculate and display the total sum
+      calculateTotal();
+    }
+
+    // Display the cart on page load
+    window.onload = function() {
+      displayCart();
+    };
+  </script>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: 120px;
+    }
+
+    th, td {
+      border: 1px solid #dddddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color:lightblue;
+    }
+
+    #total {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .buy-all-button-container {
+  border: 1px solid #181616; /* Border color */
+  padding: 4px; /* Padding around the button */
+  background-color: #ecb3b3; /* Background color */
+  width:70px;
+
+}
+
+.buy-all-button {
+  text-decoration: none; /* Remove underline for the link */
+  color: #333; /* Text color */
+  font-weight: bold; /* Bold text */
+  display: inline-block; /* Make the link a block element to apply padding and background color */
+  padding: 8px 16px; /* Padding for the button */
+}
+
+  </style>
+</head>
+<body style="background-color: rgb(227, 250, 250);">
+
+  <header>
+      <nav>
+        <div class="logo">
+          <img src="logo.png" height="100px" width="150px">
+          </div>
+        <ul>
+        
+          <li><a href="web.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="arrivals.html">Featured Book</a></li>
+          <li><a href="cat.html">Category</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="login.html">Register</a></li>
+        </ul>
+        
+        <div class="search-icon"><i class="fas fa-search"></i></div>
+        <li><a href="" class="cart-icon" onclick="toggleCart()"><i class="fas fa-shopping-cart"></i></a></li>
+        <div class="cart-items">
+          <!-- Cart items will be displayed here -->
+      </div>
+          <div class="menu-icon"><i class="fas fa-bars"></i></div>
+        </nav>
+
+        <div class="search-form">
+          <input type="search" name="search" id="search-box" placeholder="search here...">
+          <label for="search-box" class="fas fa-search"></label>
+        </div>
+        
+  <h2>Cart Page</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Product Name</th>
+        <th>Product Price</th>
+        <th>Quantity</th>
+        <th>Remove</th>
+      </tr>
+
+    </thead>
+    <tbody id="cart-table-body"></tbody>
+    
+  </table>
+  <tr>
+    <td colspan="3"></td>
+    <div class="buy-all-button-container">
+    <td><a href="buy.html" >Buy All</button></td>
+      </div>
+  </tr>
+  
+  <div id="total">Total</div>
+
+  <!---footer--> 
+  <footer>
+    <div class="footer_main">
+      <div class="tag">
+        <img src="logo.png">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Nam, explicabo placeat fuga unde ullam tempore quae eos laudantium nisi,
+            enim culpa doloremque distinctio quia earum, perspiciatis necessitatibus! Quo, consequuntur illo.
+        </p>
+      </div>
+      <div class="tag">
+        <h1>Quick Link</h1>
+        <a href="web.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="arrivals.html">Featured Book</a>
+        <a href="cat.html">Category</a>
+      </div>
+      <div class="tag">
+        <h1>Contact Info</h1>
+        <a href="#"><i class="fas fa-phone"></i>+98 23 567 7890</a>
+        <a href="#"><i class="fas fa-phone"></i>+98 32 566 7789</a>
+        <a href="#"><i class="fas fa-envelope"></i>bookstore123@gmail.com</a>
+    </div>
+    <div class="tag">
+      <h1>Follow us</h1>
+      <div class="social_link">
+      <i class="fab fa-facebook-square"></i></a>
+      <i class="fab fa-instagram"></i></a>
+      <i class="fab fa-linkedin"></i></a>
+      <i class="fab fa-twitter"></i></a>
+  </div>
+  </div>
+  <div class="tag">
+    <h1>News letter</h1>
+   <div class="search">
+    <input type="text" placeholder="your email id">
+    <button type="submit">Subscribe</button>
+   </div>
+</div>
+</div>
+<p class="end">copyright<span><i class="fas fa-copyright"></i>bookstore,Powered by E-Learning</span></p>
+
+   </footer>
+  <script src="cart.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color:darkgray;">
+    <h4 style="font-size: 40px; color:brown;"><center>ORDER FORM</center></h4><br>
+<div class="container">
+<fieldset>
+<form id="myForm" action="Form.php" method="post">
+    <br>
+<div>
+<label for="firstname">FIRST NAME</label><br>
+<input type="text" id="firstname" name="firstname" placeholder="ENTER YOUR FIRST NAME" required>
+</div>
+<BR>
+<div>
+<label for="lastname">LAST NAME</label><br>
+<input type="text" id="lastname" name="lastname" placeholder="ENTER YOUR LAST NAME" required>
+</div>
+<BR>
+    <div>
+    <label for="phone">PHONE NUMBER</label><br>
+    <input type="tel" id="phone" name="phone" maxlength="10" pattern="[0-9]{10}" placeholder="ENTER PHONE NUMBER" required>
+    </div>
+    <BR>
+        <div>
+        <label for="email">EMAIL</label><br>
+        <input type="email" id="email" name="email" placeholder="ENTER EMAIL" required>
+        </div>
+<BR>
+<div>
+<label for="state">STATE</label><br>
+<input type="text" name="state" placeholder="Enter State">
+<!-- <select id="state" name="state" placeholder="SELECT STATE" required>
+    <option>Select</option>
+    <option >KARNATAKA</option>
+    <option >MAHARASTRA</option>
+    <option >TAMILNADU</option> 
+    <option>KERALA</option> 
+    <option>GUJARATH</option> 
+    <option>ODISHA</option> 
+    <option>ANDHRAPRADHESH</option> 
+    <option>THELANGANA</option> 
+    <option>MADHYAPRADESH</option> 
+    <option>MANIPURA</option> 
+    <option>BIHAR</option>
+    <option>ASSAM</option> 
+    <option>SIKKIM</option> 
+    <option>HARIYANA</option> 
+    <option>PANJAB</option> 
+    <option>UTTAR PRADESH</option> 
+    <option>MEGHAAYA</option>  
+    </select> -->
+
+<br>
+<BR>
+<div>
+    <label for="address">ADDRESS</label><br>
+    <textarea  id="address" name="address" placeholder="ENTER ADDRESS" required></textarea>
+    </div>
+    <BR>
+    <div>
+        <label for="houseno">House/Building no</label><br>
+        <input type="text" id="houseno" name="houseno" placeholder="ENTER house/buildingno" required>
+        </div>
+        <BR>
+            <div>
+            <label for="pincode">Pincode</label><br>
+            <input type="text" id="pincode" name="pincode"  placeholder="ENTER pincode" required>
+            </div>
+            <br>
+            <label for="age">AGE</label><br>
+            <input type="text" name="age" placeholder="Enter Age">
+<!-- <select id="age" name="age" placeholder="SELECT AGE" required>
+    <option>Select</option>
+    <option >5-10</option>
+    <option >10-15</option>
+    <option >15-20</option> 
+    <option>20-25</option> 
+    <option>25-35</option> 
+    <option>35-50</option> 
+    <option>50-60</option> 
+    <option>60-100</option> 
+    </select> -->
+</div>
+<br>
+<label for="quantity">Qunatity of Books</label><br>
+<input type="text" name="quantity" placeholder="Enter Quantity ">
+<!-- <select id="quantity" name="quantity" placeholder="SELECT Qunatity" required>
+<option>Select</option>
+<option >2</option>
+<option >3</option>
+<option >4</option> 
+<option>5</option> 
+<option>6</option> 
+<option>7</option> 
+<option>10</option> 
+<option>11</option> 
+<option >12</option>
+<option >13</option>
+<option >14</option> 
+<option>15</option> 
+<option>16</option> 
+<option>17</option> 
+<option>18</option> 
+<option>19</option> 
+<option>20</option> 
+</select> -->
+<br>
+
+            
+<BR>
+<center>
+
+ 
+    <input class="style-reset" type="reset" value="RESET">
+    <button type="submit" id="nextBtn" onclick="msg()">NEXT</button>
+    </center>
+    </form>
+    </fieldset>
+    </div>
+    <script src="script.js"></script>
+            </body>
+            
+            </html>
+    

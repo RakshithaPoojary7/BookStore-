@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+    <body style="background-color: rgb(233, 245, 245);">
+
+        <header>
+            <nav>
+              <div class="logo">
+                <img src="logo.png" height="100px" width="150px">
+                </div>
+              <ul>
+                <li><a href="web.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="arrivals.html">Featured Book</a></li>
+                <li><a href="cat.html">Category</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+              </ul>
+              <div class="search-icon"><i class="fas fa-search"></i></div>
+          <li><a href="cart.html" class="cart-icon" onclick="toggleCart()"><i class="fas fa-shopping-cart"></i></a></li>
+          <div class="cart-items">
+            <!-- Cart items will be displayed here -->
+        </div>
+            <div class="menu-icon"><i class="fas fa-bars"></i></div>
+          </nav>
+              </nav>
+         
+                <div class="arrivals">
+                    <h1>Featured Book</h1>
+                    <div class="arrive_box">
+                        <div class="arrive_card">
+                            <div class="arrive_image">
+                                <img src="book1.jpg">
+                            </div>
+                            <div class="arrive_tag">
+                                <p>Featured Book</p>
+                                <div class="arrive_icon">
+                                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p class="book_price">$25.50<sub><del>$28.50</del></sub></p>
+                              
+                                <a href="buy.html" class="arrivals_btn">Buy now</a>
+                                <button onclick="addToCart('sample Text',25.50)">Add Cart</button>
+                            </div>
+                       </div>
+                        <div class="arrive_card">
+                            <div class="arrive_image">
+                                <img src="book2.jpg">
+                            </div>
+                            <div class="arrive_tag">
+                                <p>Featured Book</p>
+                                <div class="arrive_icon">
+                                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p class="book_price">$25.50<sub><del>$28.50</del></sub></p>
+                                <a href="buy.html" class="arrivals_btn">Buy now</a>
+                                <a href="" class="arrivals_btn">Add Cart</a>
+                            </div>
+                        </div>
+                        <div class="arrive_card">
+                            <div class="arrive_image">
+                                <img src="kidk1.jpg">
+                            </div>
+                            <div class="arrive_tag">
+                                <p>Featured Book</p>
+                                <div class="arrive_icon">
+                                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p class="book_price">$25.50<sub><del>$28.50</del></sub></p>
+                                <a href="buy.html" class="arrivals_btn">Buy now</a>
+                                <button onclick="addToCart('sample Text',25.50)">Add Cart</button>
+                            </div>
+                        </div>
+                        <div class="arrive_card">
+                            <div class="arrive_image">
+                                <img src="r.jpg">
+                            </div>
+                            <div class="arrive_tag">
+                                <p>Featured Book</p>
+                                <div class="arrive_icon">
+                                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p class="book_price">$25.50<sub><del>$28.50</del></sub></p>
+                                <a href="back.html" class="arrivals_btn">Buy now</a>
+                                <button onclick="addToCart('sample Text',25.50)">Add Cart</button>
+                            </div>
+                        </div>
+                        <div class="arrive_card">
+                            <div class="arrive_image">
+                                <img src="pl4.jpg">
+                            </div>
+                            <div class="arrive_tag">
+                                <p>Featured Book</p>
+                                <div class="arrive_icon">
+                                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p class="book_price">$25.50<sub><del>$28.50</del></sub></p>
+                                <a href="buy.html" class="arrivals_btn">Buy now</a>
+                                <button onclick="addToCart('sample Text',25.50)">Add Cart</button>
+                            </div>
+                        </div>
+                        <div class="arrive_card">
+                            <div class="arrive_image">
+                                <img src="cr4.jpg">
+                            </div>
+                            <div class="arrive_tag">
+                                <p>Featured Book</p>
+                                <div class="arrive_icon">
+                                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p class="book_price">$25.50<sub><del>$28.50</del></sub></p>
+                                <a href="buy.html" class="arrivals_btn">Buy now</a>
+                                <button onclick="addToCart('sample Text',25.50)">Add Cart</button>
+                            </div>
+                        </div>
+                        <div class="arrive_card">
+                            <div class="arrive_image">
+                                <img src="tn1.jpg">
+                            </div>
+                            <div class="arrive_tag">
+                                <p>Featured Book</p>
+                                <div class="arrive_icon">
+                                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p class="book_price">$25.50<sub><del>$28.50</del></sub></p>
+                                <a href="back.html" class="arrivals_btn">Buy now</a>
+                                <button onclick="addToCart('sample Text',25.50)">Add Cart</button>
+                            </div>
+                        </div>
+                        <div class="arrive_card">
+                            <div class="arrive_image">
+                                <img src="q.jpg">
+                            </div>
+                            <div class="arrive_tag">
+                                <p>Featured Book</p>
+                                <div class="arrive_icon">
+                                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p class="book_price">$25.50<sub><del>$28.50</del></sub></p>
+                                <a href="back.html" class="arrivals_btn">Buy now</a>
+                                <button onclick="addToCart('sample Text',25.50)">Add Cart</button>
+                            </div>
+                        </div>
+                        <div class="arrive_card">
+                            <div class="arrive_image">
+                                <img src="am.jpg">
+                            </div>
+                            <div class="arrive_tag">
+                                <p>Featured Book</p>
+                                <div class="arrive_icon">
+                                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p class="book_price">$25.50<sub><del>$28.50</del></sub></p>
+                                <a href="back.html" class="arrivals_btn">Buy now</a>
+                                <button onclick="addToCart('sample Text',25.50)">Add Cart</button>
+                            </div>
+                        </div>
+                        <div class="arrive_card">
+                            <div class="arrive_image">
+                                <img src="art2.jpg">
+                            </div>
+                            <div class="arrive_tag">
+                                <p>Featured Book</p>
+                                <div class="arrive_icon">
+                                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p class="book_price">$25.50<sub><del>$28.50</del></sub></p>
+                                <a href="buy.html" class="arrivals_btn">Buy now</a>
+                                <button onclick="addToCart('sample Text',25.50)">Add Cart</button>
+                            </div>
+                        </div>
+                        <div class="arrive_card">
+                            <div class="arrive_image">
+                                <img src="my3.jpg">
+                            </div>
+                            <div class="arrive_tag">
+                                <p>Featured Book</p>
+                                <div class="arrive_icon">
+                                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p class="book_price">$25.50<sub><del>$28.50</del></sub></p>
+                                <a href="buy.html" class="arrivals_btn">Buy now</a>
+                                <button onclick="addToCart('sample Text',25.50)">Add Cart</button>
+                            </div>
+                        </div>
+                        <div class="arrive_card">
+                            <div class="arrive_image">
+                                <img src="book12.jpg">
+                            </div>
+                            <div class="arrive_tag">
+                                <p>Featured Book</p>
+                                <div class="arrive_icon">
+                                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p class="book_price">$25.50<sub><del>$28.50</del></sub></p>
+                                <a href="buy.html" class="arrivals_btn">Buy now</a>
+                                <button onclick="addToCart('sample Text',25.50)">Add Cart</button>
+                            </div>
+                        </div>
+                        <div class="arrive_card">
+                            <div class="arrive_image">
+                                <img src="fa8.jpg">
+                            </div>
+                            <div class="arrive_tag">
+                                <p>Featured Book</p>
+                                <div class="arrive_icon">
+                                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p class="book_price">$25.50<sub><del>$28.50</del></sub></p>
+                                <a href="buy.html" class="arrivals_btn">Buy now</a>
+                                <button onclick="addToCart('sample Text',25.50)">Add Cart</button>
+                            </div>
+                        </div>
+                        <div class="arrive_card">
+                            <div class="arrive_image">
+                                <img src="book1.jpg">
+                            </div>
+                            <div class="arrive_tag">
+                                <p>Featured Book</p>
+                                <div class="arrive_icon">
+                                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p class="book_price">$25.50<sub><del>$28.50</del></sub></p>
+                                <a href="buy.html" class="arrivals_btn">Buy now</a>
+                                <button onclick="addToCart('sample Text',25.50)">Add Cart</button>
+                            </div>
+                        </div>
+                        <div class="arrive_card">
+                            <div class="arrive_image">
+                                <img src="book2.jpg">
+                            </div>
+                            <div class="arrive_tag">
+                                <p>Featured Book</p>
+                                <div class="arrive_icon">
+                                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p class="book_price">$25.50<sub><del>$28.50</del></sub></p>
+                                <a href="buy.html" class="arrivals_btn">Buy now</a>
+                                <button onclick="addToCart('sample Text',25.50)">Add Cart</button>
+                            </div>
+                        </div>
+                        <div class="arrive_card">
+                            <div class="arrive_image">
+                                <img src="hn.jpg">
+                            </div>
+                            <div class="arrive_tag">
+                                <p>Featured Book</p>
+                                <div class="arrive_icon">
+                                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p class="book_price">$25.50<sub><del>$28.50</del></sub></p>
+                                <a href="back.html" class="arrivals_btn">Buy now</a>
+                                <button onclick="addToCart('sample Text',25.50)">Add Cart</button>
+                            </div>
+                        </div>
+                        <div class="arrive_card">
+                            <div class="arrive_image">
+                                <img src="his.jpg">
+                            </div>
+                            <div class="arrive_tag">
+                                <p>Featured Book</p>
+                                <div class="arrive_icon">
+                                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p class="book_price">$25.50<sub><del>$28.50</del></sub></p>
+                                <a href="buy.html" class="arrivals_btn">Buy now</a>
+                                <button onclick="addToCart('sample Text',25.50)">Add Cart</button>
+                            </div>
+                        </div>
+                        <div class="arrive_card">
+                            <div class="arrive_image">
+                                <img src="book5.jpg">
+                            </div>
+                            <div class="arrive_tag">
+                                <p>Featured Book</p>
+                                <div class="arrive_icon">
+                                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p class="book_price">$25.50<sub><del>$28.50</del></sub></p>
+                                <a href="buy.html" class="arrivals_btn">Buy now</a>
+                                <button onclick="addToCart('sample Text',25.50)">Add Cart</button>
+                            </div>
+                        </div>
+                        <div class="arrive_card">
+                            <div class="arrive_image">
+                                <img src="book6.jpg">
+                            </div>
+                            <div class="arrive_tag">
+                                <p>Featured Book</p>
+                                <div class="arrive_icon">
+                                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p class="book_price">$25.50<sub><del>$28.50</del></sub></p>
+                                <a href="buy.html" class="arrivals_btn">Buy now</a>
+                                <button onclick="addToCart('sample Text',25.50)">Add Cart</button>
+                            </div>
+                        </div>
+                        <div class="arrive_card">
+                            <div class="arrive_image">
+                                <img src="kn2.jpg">
+                            </div>
+                            <div class="arrive_tag">
+                                <p>Featured Book</p>
+                                <div class="arrive_icon">
+                                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p class="book_price">$25.50<sub><del>$28.50</del></sub></p>
+                                <a href="buy.html" class="arrivals_btn">Buy now</a>
+                                <button onclick="addToCart('sample Text',25.50)">Add Cart</button>
+                            </div>
+                        </div>
+                        <div class="arrive_card">
+                            <div class="arrive_image">
+                                <img src="kid1.jpg">
+                            </div>
+                            <div class="arrive_tag">
+                                <p>Featured Book</p>
+                                <div class="arrive_icon">
+                                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p class="book_price">$25.50<sub><del>$28.50</del></sub></p>
+                                <a href="buy.html" class="arrivals_btn">Buy now</a>
+                                <button onclick="addToCart('sample Text',25.50)">Add Cart</button>
+                            </div>
+                        </div>
+                        <div class="arrive_card">
+                            <div class="arrive_image">
+                                <img src="sf3.jpg">
+                            </div>
+                            <div class="arrive_tag">
+                                <p>Featured Book</p>
+                                <div class="arrive_icon">
+                                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p class="book_price">$25.50<sub><del>$28.50</del></sub></p>
+                                <a href="buy.html" class="arrivals_btn">Buy now</a>
+                                <button onclick="addToCart('sample Text',25.50)">Add Cart</button>
+                            </div>
+                        </div>
+                        <div class="arrive_card">
+                            <div class="arrive_image">
+                                <img src="book10.jpg">
+                            </div>
+                            <div class="arrive_tag">
+                                <p>Featured Book</p>
+                                <div class="arrive_icon">
+                                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p class="book_price">$25.50<sub><del>$28.50</del></sub></p>
+                                <a href="buy.html" class="arrivals_btn">Buy now</a>
+                                <button onclick="addToCart('sample Text',25.50)">Add Cart</button>
+                            </div>
+                        </div>
+                        <div class="arrive_card">
+                            <div class="arrive_image">
+                                <img src="gr1.jpg">
+                            </div>
+                            <div class="arrive_tag">
+                                <p>Featured Book</p>
+                                <div class="arrive_icon">
+                                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p class="book_price">$25.50<sub><del>$28.50</del></sub></p>
+                                <a href="back.html" class="arrivals_btn">Buy now</a>
+                                <button onclick="addToCart('sample Text',25.50)">Add Cart</button>
+                            </div>
+                        </div>
+                        <div class="arrive_card">
+                            <div class="arrive_image">
+                                <img src="af4.jpg">
+                            </div>
+                            <div class="arrive_tag">
+                                <p>Featured Book</p>
+                                <div class="arrive_icon">
+                                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p class="book_price">$25.50<sub><del>$28.50</del></sub></p>
+                                <a href="buy.html" class="arrivals_btn">Buy now</a>
+                                <button onclick="addToCart('sample Text',25.50)">Add Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script src="cart.js"></script>
+</body>
+</html>

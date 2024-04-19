@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Form</title>
+  <link rel="stylesheet" href="style3.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: rgb(243, 245, 247);
+
+    }
+
+    .form-container {
+      max-width: 400px;
+      margin: auto;
+      border: 1px solid #ddd;
+      padding:20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transform: translate(-1%,20%);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    input[type="radio"] {
+      margin-right: 5px;
+      font-weight: 900;
+    }
+
+    textarea {
+      width: 100%;
+      height: 100px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      width:20%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transform: translate(9%,-99%);
+    }
+    button:hover{
+      background-color:lightgreen;
+    }
+    .btn-back {
+      background-color:rgb(109, 178, 247);
+      text-decoration: none;
+      display: inline-block;
+      padding:10px;
+      border-radius:5px;
+      color:black;
+    }
+    .back{
+      background-color:rgb(109, 178, 247);
+      text-decoration: none;
+      display: inline-block;
+      padding:10px;
+      border-radius:5px;
+      color:black;
+     transform: translate(320%,2%);
+    }
+    .btn-back:hover{
+      background-color: rgb(184, 245, 225);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <form id="orderForm">
+
+      <label>Select Payment Mode:</label>
+      <div>
+        <br>
+      <input type="radio" name="payment" value="gpay" onclick="enableConfirmButton()"> Google Pay
+      </div>
+      <div>
+        
+      <input type="radio" name="payment" value="phonepe" onclick="enableConfirmButton()"> PhonePe
+      </div>
+      <div>
+      <input type="radio" name="payment" value="visa" onclick="enableConfirmButton()"> Visa
+      </div>
+      <div>
+      <input type="radio" name="payment" value="cod" onclick="enableConfirmButton()"> Cash on Delivery
+      </div>
+
+      <br>
+
+      <button type="button" id="confirmButton" disabled onclick="confirmOrder()">Confirm</button>
+
+    </form>
+<br>
+    <label for="feedback">Feedback:</label>
+    <textarea id="feedback" name="feedback" placeholder="Enter your feedback here..."></textarea>
+
+    <br>
+
+    <a href="web.html" class="btn-back">Back</a>
+    <a href="" class="back">SUBMIT</a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

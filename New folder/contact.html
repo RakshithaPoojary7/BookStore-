@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Responsive Contact Us Page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet"  href="style2.css">
+    </head>
+    <body>
+        <section class="contact">
+            <div class="content">
+                <h1>Contact Us</h1>
+                <p>For more informaation about our Book store or process feel free to get in touch.If you've any doubt please contact us.</p>
+            </div>
+            <div class="container">
+                <div class="contactInfo">
+                    <div class="box">
+                        <div class="icon"><i class="fas fa-home" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Adress</h3>
+                            <p>4671 Sugar camp Road,<br>bangalore,karntaka,<br>57125</p>
+                        </div>                    
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fas fa-phone" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>098-765-4321</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>learningbookstore@gmail.com</p>
+                    </div>
+                </div> 
+            </div> 
+            <div class="contactForm">
+                <form action="cont.php" method="post">
+                   <center><h2>Send Message</h2></center>
+                    <div class="inputBox">
+                        <input type="text" name="fname" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="mail" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required" name="msg"></textarea>
+                        <span>Type your Message...</span>
+                    </div>
+                    <div class="inputBox">
+                       <center> <input type="submit" name="" value="send"></center>
+                    </div>
+
+                </form>
+            </div>   
+            
+    </body>
+</html>
